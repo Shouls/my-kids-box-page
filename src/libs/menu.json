@@ -1,0 +1,55 @@
+{
+  "comidas": [
+    {
+      "titulo": "Taquitos a vapor",
+      "description": "4 tacos a vapor de carne deshebrada, incluye papas fritas.",
+      "costo": 100
+    },
+    {
+      "titulo": "Hamburguesa con papas a la francesa",
+      "description": "180g de carne con una rebanada de queso, los aderezos vienen aparte.",
+      "costo": 100
+    },
+    {
+      "titulo": "Boneless con papas a la francesa",
+      "description": "Pechuga de pollo natural empanizada y frita.",
+      "costo": 110
+    },
+    {
+      "titulo": "Tamales",
+      "description": "2 de carne y 1 de frijol, incluye papas fritas.",
+      "costo": 100
+    },
+    {
+      "titulo": "Croissant",
+      "description": "De jamón con queso, incluye papas fritas.",
+      "costo": 100
+    }
+  ],
+
+  "bebidas": [
+    {
+      "titulo": "Jugo",
+      "description": "Jugo de manzana, mango y durazno, envase de 400ml."
+    },
+    {
+      "titulo": "Agua",
+      "description": "Botella de 600ml."
+    },
+    {
+      "titulo": "Refresco",
+      "description": "Botella de 600ml, sabor a escoger."
+    }
+  ],
+
+  "adicionales": [
+    {
+      "titulo": "Pastel de cupcakes",
+      "description": "Elaboramos pasteles artesanales de cupcakes con el diseño y los colores que tú quieras."
+    },
+    {
+      "titulo": "Fruta picadita",
+      "description": "Escoge 2 de tus frutas favoritas para un postre rico y nutritivo."
+    }
+  ]
+}

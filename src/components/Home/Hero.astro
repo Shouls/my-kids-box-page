@@ -1,0 +1,43 @@
+---
+import { Image } from "astro:assets";
+import HeroImage from "../../assets/images/HeroImage.webp";
+import Container from "../Container.astro";
+---
+<!--Sección de color rosa -->
+<section id="inicio" class="min-h-screen bg-linear-to-b from-pink-200 to-pink-100">
+  <Container class="flex flex-col lg:flex-row justify-center items-center min-h-screen gap-16 lg:gap-8">
+    <div class="lg:flex-1 text-indigo-950 space-y-8 text-center lg:text-left">
+      <h1 class="text-4xl lg:text-7xl font-serif font-semibold leading-tight">
+        La comida más deliciosa y divertida, <span class="text-fuchsia-500"
+          >directo a tu escuela para festejar a tu peque.</span
+        >
+      </h1>
+      <p class="text-xl lg:text-3xl leading-tight">
+        Ofrecemos lunch boxes para todo tipo de
+        celebraciones. Cuidamos cada detalle para que tú peque solo disfrutes.
+      </p>
+      <div class="flex gap-4 justify-center lg:justify-start">
+        <a
+          href="#menu"
+          class="px-6 py-2 bg-indigo-950 text-white rounded-full font-semibold text-2xl hover:bg-indigo-800 transition duration-300"
+        >
+          Ver menú
+        </a>
+        <a
+          href="#nosotros"
+          class="px-6 py-2 bg-fuchsia-700 text-white rounded-full font-semibold text-2xl hover:bg-fuchsia-600 transition duration-300"
+        >
+          Sobre Nosotros
+        </a>
+      </div>
+    </div>
+    <div class="lg:flex-1">
+      <Image
+        loading="eager"
+        src={HeroImage}
+        alt="Imagen de un lunch box de My Lunch Box."
+        class="mx-auto rounded-2xl w-72 lg:w-150 h-auto rotate-6"
+      />
+    </div>
+  </Container>
+</section>

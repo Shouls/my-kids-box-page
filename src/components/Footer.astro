@@ -1,0 +1,63 @@
+---
+import { Icon } from "astro-icon/components";
+
+import Container from "./Container.astro";
+
+const MAILTO = "mailto:zindilugza@gmail.com";
+const FACEBOOK = "";
+const INSTAGRAM = "";
+const WHATSAPP = "";
+---
+
+<footer class="bg-teal-600 text-white py-8">
+  <Container class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-0">
+    <div class="text-center">
+      <h5 class="font-serif text-xl font-bold">My Kids Box</h5>
+
+      <p class="mt-4 mb-8">
+        Sabor y amor artesanal directo a tu puerta o evento. Transformamos
+        ingredientes en momentos memorables.
+      </p>
+
+      <p class="text-sm italic">
+        © 2026 My Kids Box. All rights reserved.
+      </p>
+
+    </div>
+
+    <div class="hidden md:block"/>
+
+    <div class="text-center">
+      <h5 class="text-xl font-bold mb-2">Contacto</h5>
+
+      <ul>
+        <li class="flex justify-center md:justify-start">
+          <a href={MAILTO} target="_blank" rel='noopener noreferrer' class="p-2 flex items-center gap-2 hover:text-gray-200 transition duration-300 w-fit">
+            <Icon name="mail" />
+            zindilugza@gmail.com
+          </a>
+        </li>
+
+        <li class="p-2 flex items-center justify-center md:justify-start gap-2">
+          <Icon name="phone" />
+          +52 81 1259 8426
+        </li>
+
+        <li class="flex items-center justify-center md:justify-start gap-1">
+          <a href={FACEBOOK} target="_blank" rel='noopener noreferrer' class="p-2 flex items-center gap-2 rounded-full hover:bg-teal-500 transition duration-300 w-fit">
+            <Icon name="facebook" class="text-white"/>
+          </a>
+
+          <a href={INSTAGRAM} target="_blank" rel='noopener noreferrer' class="p-2 flex items-center gap-2 rounded-full hover:bg-teal-500 transition duration-300 w-fit">
+            <Icon name="instagram" class="text-white"/>
+          </a>
+          
+          <a href={WHATSAPP} target="_blank" rel='noopener noreferrer' class="p-2 flex items-center gap-2 rounded-full hover:bg-teal-500 transition duration-300 w-fit">
+            <Icon name="whatsAppFill" class="text-white"/>
+          </a>
+        </li>
+       
+      </ul>
+    </div>
+  </Container>
+</footer>

@@ -1,0 +1,104 @@
+---
+import Image from "astro/components/Image.astro";
+import Container from "../Container.astro";
+import ContactButton from "../ContactButton.astro";
+
+import Boneless from "../../assets/images/boneless.png";
+import Bebida from "../../assets/images/bebidas.jpg";
+import Postre from "../../assets/images/postre.jpeg";
+
+import menu from "../../libs/menu.json";
+const { comidas, bebidas, adicionales } = menu;
+---
+
+<!--Sección de color verde -->
+<section id="menu" class="bg-linear-to-b from-emerald-200 to-white">
+  <Container class="space-y-4">
+    <h2 class="text-5xl font-bold font-serif text-center text-green-950 mt-4">
+      Nuestro menú
+    </h2>
+    <p class="text-2xl font-medium text-center text-green-950 pb-4">
+      ¡Personaliza tu experiencia como desees!
+    </p>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-y-16">
+      <article
+        class="col-span-2 bg-emerald-600 rounded-xl p-8 text-white space-y-4 w-fit h-fit m-auto order-0"
+      >
+        <h4 class="text-3xl font-bold text-emerald-200 text-center">
+          Primero escoge tú comida
+        </h4>
+        <ul class="space-y-4 list-disc pl-4">
+          {
+            comidas.map(({ titulo, description, costo }) => (
+              <li>
+                <h5 class="text-2xl font-medium">{titulo}</h5>
+                <p>{description}</p>
+                <p class="font-medium">${costo} MXN</p>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+
+      <Image
+        src={Boneless}
+        alt="Imagen de comidas"
+        class="col-span-2 m-auto rounded-3xl w-96 h-96 rotate-6 object-cover order-1"
+      />
+
+      <Image
+        src={Bebida}
+        alt="Imagen de bebidas"
+        class="col-span-2 m-auto rounded-3xl w-96 h-96 -rotate-6 object-cover order-3 lg:order-2"
+      />
+
+      <article
+        class="bg-sky-600 rounded-xl p-8 text-white col-span-2 w-fit h-fit m-auto order-2 lg:order-3"
+      >
+        <h4 class="text-3xl font-bold text-sky-200 text-center">
+          Escoge la bebida
+        </h4>
+        <ul class="space-y-4 list-disc pl-4">
+          {
+            bebidas.map(({ titulo, description }) => (
+              <li>
+                <h5 class="text-2xl font-medium">{titulo}</h5>
+                <p>{description}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+
+      <article
+        class="bg-fuchsia-900 rounded-xl p-8 text-white col-span-2 w-fit h-fit m-auto order-4"
+      >
+        <h4 class="text-3xl font-bold text-violet-300 text-center">Postre</h4>
+        <ul class="space-y-4">
+          {
+            adicionales.map(({ titulo, description }) => (
+              <li>
+                <h5 class="text-2xl font-medium">{titulo}</h5>
+                <p>{description}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+
+      <Image
+        src={Postre}
+        alt="Imagen de adicional"
+        class="col-span-2 m-auto rounded-3xl w-96 h-96 rotate-6 order-5"
+      />
+    </div>
+
+    <div class="flex justify-center pt-4 mb-4">
+      <ContactButton
+        title="¡Pide tu lunch box ahora!"
+        class="w-fit text-2xl px-6"
+      />
+    </div>
+  </Container>
+</section>

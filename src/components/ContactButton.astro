@@ -1,0 +1,19 @@
+---
+import { Icon } from "astro-icon/components"
+import { cn } from "../libs/utils";
+
+interface Props {
+  title?: string;
+  class?: string;
+}
+
+const { title = "Agendar evento", class: className} = Astro.props
+
+const CONTACT_PHONE = '528112598436'
+const CONTACT_MESSAGE = 'Hola, ¿me podría dar más detalles para agendar un evento?'
+const WHATSAPP_LINK = `https://api.whatsapp.com/send/?phone=${CONTACT_PHONE}&text=${CONTACT_MESSAGE}`
+---
+<a href={WHATSAPP_LINK} target="_blank" rel='noopener noreferrer' class={cn('bg-[#39B24A] flex items-center gap-2 rounded-full px-4 py-2 text-white font-semibold transition duration-300 hover:bg-green-600', className)}>
+  <Icon name="whatsAppFill" />
+  {title}
+</a>

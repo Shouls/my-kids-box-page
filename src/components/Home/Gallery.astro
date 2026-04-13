@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import ContactButton from "../ContactButton.astro";
+import Container from "../Container.astro";
+
+import Comida1 from "../../assets/images/gallery/Comida1.jpeg"
+import Comida2 from "../../assets/images/gallery/Comida2.jpeg"
+import Comida3 from "../../assets/images/gallery/Comida3.jpeg"
+
+import Pasteles1 from "../../assets/images/gallery/Pasteles1.jpeg"
+import Pasteles2 from "../../assets/images/gallery/Pasteles2.jpeg"
+import Pasteles4 from "../../assets/images/gallery/Pasteles4.jpeg"
+import Pasteles6 from "../../assets/images/gallery/Pasteles6.jpeg"
+import Pasteles7 from "../../assets/images/gallery/Pasteles7.jpeg"
+
+import Postres1 from "../../assets/images/gallery/Postres1.jpeg"
+import Postres2 from "../../assets/images/gallery/Postres2.jpeg"
+---
+
+<!--Sección de color amarillo -->
+<section id="galeria" class="bg-linear-to-b from-amber-200 to-white">
+  <Container class="space-y-4">
+    <h2 class="text-5xl font-bold font-serif text-center text-amber-950 mt-4">Momentos mágicos</h2>
+    <p class="text-2xl font-medium text-center text-amber-950 pb-4">Conoce lo que hemos logrado y las sonrisas que nos inspiran a seguir haciendo lo que aman.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-y-8 md:gap-x-8">
+
+      <Image src={Pasteles7} class="md:col-span-3 row-span-2 w-full h-auto md:h-full object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de pastelería de My Kids Box"/>
+      <Image src={Pasteles4} class="md:col-span-2 w-full h-auto lg:h-96 object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de pastelería de My Kids Box"/>
+      <Image src={Pasteles6} class="w-full h-full object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de pastelería de My Kids Box"/>
+      
+      <Image src={Pasteles1} class="col-span-2 w-full h-full object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de pastelería de My Kids Box"/>
+      <Image src={Pasteles2} class="w-full h-full object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de pastelería de My Kids Box"/>
+
+      <Image src={Comida1} class="w-full h-full object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de comida de My Kids Box"/>
+      <Image src={Comida2} class="w-full h-full object-cover rounded-2xl" alt="Imagen 2 de un ejemplo de comida de My Kids Box"/>
+      <Image src={Comida3} class="w-full h-full object-cover rounded-2xl" alt="Imagen 3 de un ejemplo de comida de My Kids Box"/>
+
+      <Image src={Postres1} class="w-full h-full object-cover rounded-2xl" alt="Imagen 1 de un ejemplo de postre de My Kids Box"/>
+      <Image src={Postres2} class="md:col-span-2 w-full h-full object-cover rounded-2xl" alt="Imagen 2 de un ejemplo de postre de My Kids Box"/>
+    </div>
+
+    
+    <div class="flex justify-center pt-4 mb-4">
+      <ContactButton title="¡Solicita un evento ahora!" class="w-fit text-2xl px-6" />
+    </div>
+  </Container>
+</section>
