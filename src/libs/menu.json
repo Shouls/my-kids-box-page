@@ -2,28 +2,48 @@
   "comidas": [
     {
       "titulo": "Taquitos a vapor",
-      "description": "4 tacos a vapor de carne deshebrada, incluye papas fritas.",
+      "description": "4 deliciosos taquitos a vapor (3 de deshebrada y 1 de frijol)",
       "costo": 100
     },
     {
       "titulo": "Hamburguesa con papas a la francesa",
-      "description": "180g de carne con una rebanada de queso, los aderezos vienen aparte.",
+      "description": "100g de carne de res con una rebanada de queso americano y jamón de pavo, los aderezos vienen aparte.",
       "costo": 100
     },
     {
       "titulo": "Boneless con papas a la francesa",
       "description": "Pechuga de pollo natural empanizada y frita.",
-      "costo": 110
+      "costo": 120
     },
     {
       "titulo": "Tamales",
-      "description": "2 de carne y 1 de frijol, incluye papas fritas.",
+      "description": "Tamales caseros 100% de nixtamal elaborados a mano (2 de carne y 1 de frijol), incluye papas fritas.",
       "costo": 100
     },
     {
       "titulo": "Croissant",
-      "description": "De jamón con queso, incluye papas fritas.",
+      "description": "Con pan de mantequilla, jamón de pavo y queso americano, incluye papas fritas.",
       "costo": 100
+    },
+    {
+      "titulo": "Hotdog",
+      "description": "Salchicha 100% de pavo, incluye aderezos aparte y papas fritas.",
+      "costo": 100
+    },
+    {
+      "titulo": "Chilidog",
+      "description": "Pan recién horneado, con frijoles, salchicha de pavo, chorizo de puerco y salsa de tomate, incluye papas fritas.",
+      "costo": 100
+    },
+    {
+      "titulo": "Ensalada de pollo",
+      "description": "Mezcla de pechuga de pollo, zanahoria, papa cocida natural, incluye ensalada de coditos y galletas saladas.",
+      "costo": 110
+    },
+    {
+      "titulo": "Pizza individual",
+      "description": "Pizza recién hecha con queso mozzarella de pepperoni o jamón de pavo incluye papas fritas",
+      "costo": 120
     }
   ],
 
@@ -35,21 +55,34 @@
     {
       "titulo": "Agua",
       "description": "Botella de 600ml."
-    },
-    {
-      "titulo": "Refresco",
-      "description": "Botella de 600ml, sabor a escoger."
     }
   ],
 
   "adicionales": [
     {
-      "titulo": "Pastel de cupcakes",
-      "description": "Elaboramos pasteles artesanales de cupcakes con el diseño y los colores que tú quieras."
+      "titulo": "Pastel de cupcakes o tradicional",
+      "description": "Elaboramos pasteles artesanales (de cupcakes o tradicional) con el diseño y los colores que tú quieras."
     },
     {
       "titulo": "Fruta picadita",
       "description": "Escoge 2 de tus frutas favoritas para un postre rico y nutritivo."
+    },
+    {
+      "titulo": "Gelatina",
+      "description": "Escoge 2 de tus sabores favoritos para disfrutar."
+    }
+  ],
+
+  "opcional": [
+    {
+      "titulo": "Fiesta en el Salón de clases",
+      "description": "Decoramos el salón de clases con globos, una cortinilla de cumpleaños, una vela de chispas para tu pastel y un globo de número.",
+      "costo": 110
+    },
+    {
+      "titulo": "Bolsita de dulces",
+      "description": "Elaboramos bolsitas de dulces con el diseño de su preferencia.",
+      "costo": 50
     }
   ]
 }

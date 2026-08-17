@@ -5,29 +5,38 @@ import Container from "./Container.astro";
 
 <header class="fixed bg-white/60 w-full backdrop-blur-xl z-50">
   <Container class="flex justify-between items-center">
-    <a href="/" class="font-bold text-3xl text-yellow-500">
+    <a href="/" class="font-bold text-2xl md:text-3xl text-pink-500">
       My Kids Box
     </a>
 
     <nav class="hidden md:block">
       <ul class="flex justify-between gap-8 text-xl">
         <li>
-          <a href="#menu" class="hover:text-yellow-500 transition duration-300">Menú</a>
+          <a href="#menu" class="hover:text-yellow-500 transition duration-300"
+            >Menú</a
+          >
         </li>
         <li>
-          <a href="#galeria" class="hover:text-yellow-500 transition duration-300">Galería</a>
+          <a
+            href="#galeria"
+            class="hover:text-yellow-500 transition duration-300">Galería</a
+          >
         </li>
         <li>
-          <a href="#nosotros" class="hover:text-yellow-500 transition duration-300">Nosotros</a>
+          <a
+            href="#nosotros"
+            class="hover:text-yellow-500 transition duration-300">Nosotros</a
+          >
         </li>
         <li>
-          <a href="#contacto" class="hover:text-yellow-500 transition duration-300">Contacto</a>
+          <a
+            href="#contacto"
+            class="hover:text-yellow-500 transition duration-300">Contacto</a
+          >
         </li>
       </ul>
     </nav>
-  
+
     <ContactButton />
-
   </Container>
-
 </header>

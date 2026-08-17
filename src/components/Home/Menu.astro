@@ -6,15 +6,18 @@ import ContactButton from "../ContactButton.astro";
 import Boneless from "../../assets/images/boneless.png";
 import Bebida from "../../assets/images/bebidas.jpg";
 import Postre from "../../assets/images/postre.jpeg";
+import Opcional from "../../assets/images/opcional.jpg";
 
 import menu from "../../libs/menu.json";
-const { comidas, bebidas, adicionales } = menu;
+const { comidas, bebidas, adicionales, opcional } = menu;
 ---
 
 <!--Sección de color verde -->
 <section id="menu" class="bg-linear-to-b from-emerald-200 to-white">
   <Container class="space-y-4">
-    <h2 class="text-5xl font-bold font-serif text-center text-green-950 mt-4">
+    <h2
+      class="text-4xl sm:text-5xl font-bold font-serif text-center text-green-950 mt-4"
+    >
       Nuestro menú
     </h2>
     <p class="text-2xl font-medium text-center text-green-950 pb-4">
@@ -32,7 +35,7 @@ const { comidas, bebidas, adicionales } = menu;
           {
             comidas.map(({ titulo, description, costo }) => (
               <li>
-                <h5 class="text-2xl font-medium">{titulo}</h5>
+                <h5 class="text-2xl font-bold">{titulo}</h5>
                 <p>{description}</p>
                 <p class="font-medium">${costo} MXN</p>
               </li>
@@ -63,7 +66,7 @@ const { comidas, bebidas, adicionales } = menu;
           {
             bebidas.map(({ titulo, description }) => (
               <li>
-                <h5 class="text-2xl font-medium">{titulo}</h5>
+                <h5 class="text-2xl font-bold">{titulo}</h5>
                 <p>{description}</p>
               </li>
             ))
@@ -79,7 +82,7 @@ const { comidas, bebidas, adicionales } = menu;
           {
             adicionales.map(({ titulo, description }) => (
               <li>
-                <h5 class="text-2xl font-medium">{titulo}</h5>
+                <h5 class="text-2xl font-bold">{titulo}</h5>
                 <p>{description}</p>
               </li>
             ))
@@ -90,14 +93,37 @@ const { comidas, bebidas, adicionales } = menu;
       <Image
         src={Postre}
         alt="Imagen de adicional"
-        class="col-span-2 m-auto rounded-3xl w-96 h-96 rotate-6 order-5"
+        class="col-span-2 m-auto rounded-3xl w-96 h-96 rotate-6 order-5 object-cover"
       />
+
+      <Image
+        src={Opcional}
+        alt="Imagen de opcional"
+        class="col-span-2 m-auto rounded-3xl w-96 h-96 -rotate-6 order-7 lg:order-6 object-cover"
+      />
+
+      <article
+        class="bg-yellow-600 rounded-xl p-8 text-white col-span-2 w-fit h-fit m-auto order-6 lg:order-7"
+      >
+        <h4 class="text-3xl font-bold text-yellow-300 text-center">Opcional</h4>
+        <ul class="space-y-4">
+          {
+            opcional.map(({ titulo, description, costo }) => (
+              <li>
+                <h5 class="text-2xl font-bold">{titulo}</h5>
+                <p>{description}</p>
+                <p class="font-medium">${costo} MXN</p>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
     </div>
 
     <div class="flex justify-center pt-4 mb-4">
       <ContactButton
         title="¡Pide tu lunch box ahora!"
-        class="w-fit text-2xl px-6"
+        class="w-fit text-xl sm:text-2xl px-6"
       />
     </div>
   </Container>
